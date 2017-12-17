@@ -1,5 +1,5 @@
-beamslide
-========
+estatbeam
+=========
 
 Eurostat layout style/template for `LaTeX` beamer presentation.
 ---

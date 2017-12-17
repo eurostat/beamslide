@@ -1,4 +1,4 @@
-estatbeam
+beamestat
 =========
 
 Eurostat layout style/template for `LaTeX` beamer presentation.

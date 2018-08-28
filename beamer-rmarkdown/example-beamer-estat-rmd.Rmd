@@ -1,0 +1,74 @@
+---
+title: "A presentation on something incredibly interesting with `R`"
+subtitle: "And something less"
+date: "`r format.Date(Sys.Date())`"
+author: "A. N. Onymous"
+institute: "Methodology  and   Corporate  Architecture (DG ESTAT)"
+output: 
+  beamer_presentation:
+#    template: ~/.pandoc/templates/default.beamer
+    theme: "estat"
+#    includes:
+#      in_header: extra.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## A slide with a dumb title longer than it should reasonably be
+
+1. Item 1
+2. Item 2
+3. Item 3, as interesting as previous items
+4. the longest item yet, even longer than the one above, though why you would want to make it that long is just another matter
+
+
+
+ 
+## A slide with images
+
+\begin{columns}[totalwidth=\textwidth,T]
+  \begin{minipage}{0.45\textwidth}
+    \begin{column}[t]{\textwidth}
+      \centering
+      what can we say about \\[0.5cm]
+      \includegraphics[width=\textwidth]{Eurostat_logo.jpg}
+    \end{column}
+  \end{minipage}
+  \begin{minipage}{0.45\textwidth}
+    \begin{column}[t]{\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{juncker.jpg}\\[0.5cm]
+      amazing... 
+    \end{column}
+  \end{minipage}
+\end{columns}
+
+
+## A frame with tasty multifractals
+
+<!--- 
+http://www.iacm.forth.gr/papers/grazzini_estimation_cp05.pdf
+--->
+
+Let $\epsilon_r(\vec{x})$ be the local dissipation of energy at a point $\vec{x}$ over a ball $B_r(\vec{x})$  of radius r centered around $\vec{x}$, $v_i$  the components of the velocity vector:
+
+\begin{equation*} 
+\epsilon_r(\vec{x}) = \frac{1}{\mid B_r(\vec{x})\mid}
+\int_{B_r(\vec{x})}
+d\vec{x'} \sum_{i,j} [  \delta_i v_j(\vec{x'}) + \delta_j v_i(\vec{x'}) ]
+\end{equation*}
+
+Under self-similarity assumptions, energy is transmitted from the larger scales ($L$) to the smaller ones ($r$) by means of an injection process which  only depends on the ratio $r/L$, and all the dependence in $r$ of the order-$p$ moment of $\epsilon_r$ is concentrated in the power-law
+
+\begin{equation*} 
+\langle \epsilon_r \rangle = \Big[ \frac{r}{L} \Big]^{-\alpha p}  \langle \epsilon^p_L\rangle \propto  r^{\tau_p} 
+\end{equation*}
+
+## Finally some R code
+
+R rocks!
+```{r cars, echo = TRUE}
+summary(cars)
+```

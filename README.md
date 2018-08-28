@@ -13,6 +13,7 @@ The `LaTeX` style file `beamer-estat.sty` stored herein can be used to create pr
     <tr> <td align="left"><i>contributors</i></td> 
     <td align="left" valign="middle">
 <a href="https://github.com/gjacopo"><img src="https://github.com/gjacopo.png" width="40"></a>
+<a href="https://github.com/mmatyi"><img src="https://github.com/mmatyi.png" width="40"></a>
 </td> </tr> 
     <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a> </td> </tr> 
 </table>

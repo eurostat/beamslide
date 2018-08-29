@@ -21,7 +21,7 @@ The `LaTeX` style file `beamer-estat.sty` stored herein can be used to create pr
 The layout is provided through the use of three "background" images:
 * `slide-title-background-estat.png` for (first) titlepage, and
 * `slide-background-estat.png` for other pages.
-* `slide-background-white-estat.png` for other pages.
+* `slide-background-white-estat.png` for other pages without blue headers.
 
 **Example**
 

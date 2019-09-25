@@ -12,7 +12,10 @@
 % H:/Desktop/estat-beamer/beamer-estat.sty
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{estat-beamer}[2017/11/17 v0.9 ESTAT beamer style]
+\ProvidesPackage{beamer-estat}[2017/11/17 v0.9 ESTAT beamer style]
+\DeclareOption{old}{\def\i{0}}
+\DeclareOption{new}{\def\i{1}}
+\ProcessOptions\relax
 
 %% \documentclass[unknownkeysallowed]{beamer}
 
@@ -54,6 +57,9 @@
 \setbeamerfont{title}{size=\Large,series=\bfseries}
 \setbeamerfont{subtitle}{series=\normalfont}
 \setbeamertemplate{title page}{%
+\ifnum\i=1
+    \vspace{1.6cm}
+\fi
 \vskip0pt
 \begin{beamercolorbox}[wd=\textwidth,ht=2.5cm,dp=1ex,center]{title}%{postit}%
     {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
@@ -84,6 +90,9 @@
 \setbeamerfont{title}{size=\Huge,series=\bfseries}
 \setbeamerfont{subtitle}{series=\normalfont}
 \setbeamertemplate{title page}{%
+\ifnum\i=1
+    \vspace{1.6cm}
+\fi
 \vskip0pt
 \begin{beamercolorbox}[wd=0.9\textwidth,ht=4cm,dp=1ex,right]{title}%{postit}%
     {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
@@ -111,9 +120,11 @@
 }
 
 % The headline is given by the background canvas - just skip over it
+\ifnum\i=0
 \setbeamertemplate{headline}{
   \vspace{1.6cm}
 }
+\fi
 
 % The footline is given by the date on the left and the slide number
 % on the right
@@ -135,7 +146,11 @@
     \ifnum\c@framenumber=1%% On title page
       \includegraphics[width=\paperwidth,height=\paperheight]{slide-title-background-estat.png}
     \else%
-      \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-white-estat.png}
+      \ifnum\i=1
+        \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-white-estat.png}  
+      \else
+        \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-estat.png}
+      \fi
     \fi%
   \fi
 }

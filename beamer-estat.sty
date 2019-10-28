@@ -12,7 +12,7 @@
 % H:/Desktop/estat-beamer/beamer-estat.sty
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{beamer-estat}[2017/11/17 v0.9 ESTAT beamer style]
+\ProvidesPackage{beamer-estat}[2019/10/28 v0.10 ESTAT beamer style]
 \DeclareOption{old}{\def\i{0}}
 \DeclareOption{new}{\def\i{1}}
 \ProcessOptions\relax
@@ -41,10 +41,15 @@
 \setbeamercolor{title}{fg=estattitleyellow}
 \setbeamercolor{subtitle}{fg=white}
 \setbeamercolor{structure}{fg=ectextblue}
-\setbeamercolor{page number in head/foot}{fg=white}
+\setbeamercolor{page number in head/foot}{fg=estatblue}
 
+\ifnum\i=1
+    \setbeamerfont{normal text}{}
+\fi
+\ifnum\i=0
+    \setbeamerfont{normal text}{series=\normalfont,size=\small}
+\fi
 
-\setbeamerfont{normal text}{}
 \setbeamerfont{page number in head/foot}{series=\normalfont,size=\Tiny}
 
 % does anyone actually use the nav symbols?
@@ -54,15 +59,15 @@
 \setbeamercolor{postit}{fg=black,bg=yellow}
 
 %% template title 1
-\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
 \setbeamerfont{subtitle}{series=\normalfont}
 \setbeamertemplate{title page}{%
 \ifnum\i=1
-    \vspace{1.6cm}
-\fi
+	\vspace{1.6cm}
+\fi	
 \vskip0pt
-\begin{beamercolorbox}[wd=\textwidth,ht=2.5cm,dp=1ex,center]{title}%{postit}%
-    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
+\begin{beamercolorbox}[wd=0.9\textwidth,ht=4cm,dp=1ex,right]{title}%{postit}%
+		{\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
     \par
     \vspace{0.2cm}
     {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}
@@ -74,50 +79,12 @@
 \vskip0pt plus 1filll
 \begin{flushright}
 \begin{minipage}[t][4.0cm][t]{0.4\textwidth}
-  \vspace{0pt}%
-    {\bfseries ec.europa.eu/eurostat}
-    \vskip0pt plus 1filll
     {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute}
-    \vskip0pt plus 1filll
-    {\textit\large Providing high quality statistics for Europe}
-    \vskip0pt plus 1filll
 \end{minipage}
 \end{flushright}
 \vskip0pt plus 1filll
 }
 
-%% template title 2
-\setbeamerfont{title}{size=\Huge,series=\bfseries}
-\setbeamerfont{subtitle}{series=\normalfont}
-\setbeamertemplate{title page}{%
-\ifnum\i=1
-    \vspace{1.6cm}
-\fi
-\vskip0pt
-\begin{beamercolorbox}[wd=0.9\textwidth,ht=4cm,dp=1ex,right]{title}%{postit}%
-    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
-    \par
-    \vspace{0.2cm}
-    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}
-    \par
-    \vspace{0.2cm}
-    \par
-    {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}
-\end{beamercolorbox}
-\vskip0pt plus 1filll
-\begin{flushright}
-\begin{minipage}[t][4.0cm][t]{0.7\textwidth}
-  \vspace{0pt}%
-    {\bfseries ec.europa.eu/eurostat}
-    \vskip0pt plus 1filll
-    {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute}
-    \vskip0pt plus 1filll
-    {\textit\large Providing high quality statistics for Europe}
-    \vskip0pt plus 1filll
-\end{minipage}
-\end{flushright}
-\vskip0pt plus 1filll
-}
 
 % The headline is given by the background canvas - just skip over it
 \ifnum\i=0
@@ -139,17 +106,21 @@
   \fi
 }
 
+\ifnum\i=1
+\addtobeamertemplate{footnote}{\hsize0.65\paperwidth}{}
+\fi
+
 % The background canvas gives us the running banner at the top, the EC logo
 \setbeamertemplate{background canvas}{%
   \ifbeamer@plainframe
   \else
     \ifnum\c@framenumber=1%% On title page
-      \includegraphics[width=\paperwidth,height=\paperheight]{slide-title-background-estat.png}
+      \includegraphics[width=\paperwidth,height=\paperheight]{slide-title-background-estat.eps}
     \else%
       \ifnum\i=1
-        \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-white-estat.png}  
+        \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-white-estat.eps}  
       \else
-        \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-estat.png}
+        \includegraphics[width=\paperwidth,height=\paperheight]{slide-background-estat.eps}
       \fi
     \fi%
   \fi
@@ -157,4 +128,6 @@
 
 
 %%
-%% End of file `estat-beamer.sty'. 
+%% End of file `beamer-estat.sty'. 
+
+

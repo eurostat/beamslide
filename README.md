@@ -25,7 +25,6 @@ See some [example](examples/example-beamer-estat.tex) and the [output presentati
 </tr>
 </table>
 
-
 **About**
 
 <table style="margin-right:auto;margin-left:0px"> <!-- <table align="center"> -->
@@ -37,3 +36,9 @@ See some [example](examples/example-beamer-estat.tex) and the [output presentati
 </td> </tr> 
     <tr> <td align="left"><i>license</i></td> <td align="left"><a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a> </td> </tr> 
 </table>
+
+**Resources**
+
+* LaTeX2e material [repository](https://github.com/latex3/latex2e).
+* Beamer material [repository](https://github.com/josephwright/beamer).
+* Beamer on [overleaf](https://www.overleaf.com/learn/latex/Beamer).

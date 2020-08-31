@@ -28,7 +28,7 @@ See some [example](examples/example-beamer-estat.tex) and the [output presentati
 
 **About**
 
-<table style="margin-right:auto;margin-left:0px"> <!-- align="center"> -->
+<table style="margin-right:auto;margin-left:0px"> <!-- <table align="center"> -->
     <tr> <td align="left"><i>status</i></td> <td align="left">since 2017</td> </tr> 
     <tr> <td align="left"><i>contributors</i></td> 
     <td align="left" valign="middle">

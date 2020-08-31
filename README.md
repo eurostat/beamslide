@@ -18,9 +18,9 @@ The layout is provided through the use of three "background" images:
 
 See some [example](examples/example-beamer-estat.tex) and the [output presentation](examples/example-beamer-estat.pdf) in `pdf` format:
 <table>
-<tr width="500px" height="500px" text-align="center" vertical-align="middle">
+<tr width="400px" height="400px" text-align="center" vertical-align="middle">
 <td>
-<kbd><img src="examples/example-beamer-estat-frontpage.png" alt="Front page of ESTAT presentation" max-height="80%" max-width="80%"></kbd>
+<kbd><img src="examples/example-beamer-estat-frontpage.png" alt="Front page of ESTAT presentation" max-height="70%" max-width="70%"></kbd>
 </td>
 </tr>
 </table>

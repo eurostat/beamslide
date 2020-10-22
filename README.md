@@ -25,6 +25,10 @@ See some [example](examples/example-beamer-estat.tex) and the [output presentati
 </tr>
 </table>
 
+**See also**
+
+* Official _Eurostat_ [LaTeX stylesheet](https://github.com/eurostat/eurostat_latex) for creating Statistical Working papers.
+
 **About**
 
 <table style="margin-right:auto;margin-left:0px"> <!-- <table align="center"> -->

@@ -22,10 +22,6 @@ See some [example](examples/example-beamer-estat.tex) and the [output presentati
 </tr>
 </table>
 
-**See also**
-
-* Official _Eurostat_ [LaTeX stylesheet](https://github.com/eurostat/eurostat_latex) for creating Statistical Working papers.
-
 **About**
 
 <table style="margin-right:auto;margin-left:0px"> <!-- <table align="center"> -->
@@ -43,3 +39,8 @@ See some [example](examples/example-beamer-estat.tex) and the [output presentati
 * LaTeX2e material [repository](https://github.com/latex3/latex2e).
 * Beamer material [repository](https://github.com/josephwright/beamer).
 * Beamer on [overleaf](https://www.overleaf.com/learn/latex/Beamer).
+
+**See also**
+
+* Official _Eurostat_ [LaTeX stylesheet](https://github.com/eurostat/eurostat_latex) for creating Statistical Working papers.
+

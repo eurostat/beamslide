@@ -4,7 +4,6 @@ beamslide
 Eurostat layout style/template for `LaTeX` beamer presentation.
 ---
 
-
 The `LaTeX` style file `beamer-estat.sty` stored herein can be used to create presentation with the _Eurostat_ layout. 
 
 **Description**
@@ -18,10 +17,8 @@ The layout is provided through the use of three "background" images:
 
 See some [example](examples/example-beamer-estat.tex) and the [output presentation](examples/example-beamer-estat.pdf) in `pdf` format:
 <table>
-<tr width="400px" height="400px" text-align="center" vertical-align="middle">
-<td>
-<kbd><img src="examples/example-beamer-estat-frontpage.png" alt="Front page of ESTAT presentation" max-height="70%" max-width="70%"></kbd>
-</td>
+<tr>
+<kbd><img src="examples/example-beamer-estat-frontpage.png" alt="Front page of ESTAT presentation" height="80%" width="80%"></kbd>
 </tr>
 </table>
 

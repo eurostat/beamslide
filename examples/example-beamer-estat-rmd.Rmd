@@ -3,7 +3,7 @@ title: "A presentation on something incredibly interesting with `R`"
 subtitle: "And something less"
 date: "`r format.Date(Sys.Date())`"
 author: "A. N. Onymous"
-institute: "Methodology  and   Corporate  Architecture (DG ESTAT)"
+institute: "Methodology & Innovation in Official Statistics"
 output: 
   beamer_presentation:
 #    template: ~/.pandoc/templates/default.beamer
@@ -33,13 +33,13 @@ knitr::opts_chunk$set(echo = FALSE)
     \begin{column}[t]{\textwidth}
       \centering
       what can we say about \\[0.5cm]
-      \includegraphics[width=\textwidth]{Eurostat_logo.jpg}
+      \includegraphics[width=\textwidth]{../imgs/eurostat_logo.png}
     \end{column}
   \end{minipage}
   \begin{minipage}{0.45\textwidth}
     \begin{column}[t]{\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{juncker.jpg}\\[0.5cm]
+      \includegraphics[width=\textwidth]{../imgs/juncker.png}\\[0.5cm]
       amazing... 
     \end{column}
   \end{minipage}
@@ -47,10 +47,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## A frame with tasty multifractals
-
-<!--- 
-http://www.iacm.forth.gr/papers/grazzini_estimation_cp05.pdf
---->
 
 Let $\epsilon_r(\vec{x})$ be the local dissipation of energy at a point $\vec{x}$ over a ball $B_r(\vec{x})$  of radius r centered around $\vec{x}$, $v_i$  the components of the velocity vector:
 
